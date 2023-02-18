@@ -5,6 +5,8 @@
  * Use the function puts
  * You are not allowed to use printf
  * Your program should end with the value 0
+ * main - A program prints with puts
+ * Return: 0 (Success)
  */
 int main(void)
 {
