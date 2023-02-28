@@ -5,7 +5,7 @@
  * @b: 2nd
  * Return: 0
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int temp;
 
@@ -14,3 +14,4 @@ void swap_int(int *a, int *b);
 	b = temp;
 	return (0);
 }
+
