@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - function 
+ * puts2 - function
  * @str: string
  * Return: void
  */
