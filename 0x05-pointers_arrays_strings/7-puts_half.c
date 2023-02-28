@@ -1,18 +1,22 @@
 #include "main.h"
 /**
- * puts_half - fun
- * @str: string
+ * puts_half - function
+ * @str: str
  * Return: void
  */
 void puts_half(char *str)
 {
-	int len;
-	int i;
+	int a, n, longi;
 
-	len = _strlen(str);
-	for (i = len / 2; i < len / 2; i++)
-	{
-		_putchar(str[i]);
-	}
+	longi = 0;
+
+	for (a = 0; str[a] != '\0'; a++)
+		longi++;
+	n = (longi / 2);
+	if ((longi % 2) == 1)
+		n = ((longi + 1) / 2);
+
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
 	_putchar('\n');
 }
