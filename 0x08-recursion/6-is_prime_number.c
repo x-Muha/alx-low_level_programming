@@ -1,19 +1,31 @@
 #include "main.h"
+
+int actual_prime(int n, int i);
+
 /**
- * is_prime_number - func
- * @n: int
- * Return: int
+ * is_prime_number - fun
+ * @n: x
+ * Return: xt
  */
+
 int is_prime_number(int n)
 {
-	if (n < 2)
+	if (n <= 1)
 		return (0);
-	int x = n / 2;
+	return (actual_prime(n, n - 1));
+}
 
-	for (; x > 1; x--)
-	{
-		if (n % x == 0)
-			return (1);
-	}
-	return (0);
+/**
+ * actual_prime - fun
+ * @n: x
+ * @i: x
+ * Return:x
+ */
+int actual_prime(int n, int i)
+{
+	if (i == 1)
+		return (1);
+	if (n % i == 0 && i > 0)
+		return (0);
+	return (actual_prime(n, i - 1));
 }
